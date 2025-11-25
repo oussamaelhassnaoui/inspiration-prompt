@@ -1,0 +1,19 @@
+User-agent: *
+# Allow all public content
+Allow: /
+
+# Block system files & folders
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /test/
+Disallow: /drafts/
+Disallow: /private/
+Disallow: /assets/js/
+Disallow: /assets/config/
+
+# Avoid duplicate URLs or parameter pages
+Disallow: /*?*
+Disallow: /*&*
+
+# Sitemap (IMPORTANT for SEO)
+Sitemap: https://inspirationprompt.com/sitemap.xml

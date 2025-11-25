@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - InspirationPrompt.com</title>
+    <meta name="description" content="Find answers to common questions about AI image generation, prompts, and how to use InspirationPrompt.com effectively.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/assets/Inspiration Prompt Logo.png" alt="Inspiration Prompt" class="logo-image">
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link active">FAQ</a>
+                <div class="theme-toggle" id="theme-toggle">
+                    <div class="theme-icon"></div>
+                </div>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pagee-header">
+        <div class="container">
+            <h1 class="page-title">Frequently Asked Questions</h1>
+            <p class="page-subtitle">Find answers to common questions about AI image generation and our platform</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-grid">
+                <!-- General Questions -->
+                <div class="faq-category">
+                    <h2 class="category-title">General Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>What is InspirationPrompt.com?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>InspirationPrompt.com is a platform dedicated to showcasing AI-generated images and their corresponding prompts. We help users discover amazing prompts for AI image generation tools like Stable Diffusion, Midjourney, DALL-E, and more. Our goal is to inspire creativity and help you create stunning AI-generated artwork.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>How do I use the prompts on this website?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Using our prompts is simple! Browse through our collection, find an image you like, and click on it to view the full prompt details. You can then copy the prompt text and paste it into your preferred AI image generation tool. Each prompt page also includes technical details like the AI model used, resolution, and other parameters.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Is InspirationPrompt.com free to use?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! InspirationPrompt.com is completely free to use. You can browse, search, and copy prompts without any cost or registration. We believe in making AI art inspiration accessible to everyone. We do display ads to help support the platform, but they don't interfere with your browsing experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Do I need to create an account?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No account is required to browse and use prompts from our website. You can access all features including searching, filtering, and copying prompts without registration. We keep the platform open and accessible to encourage creativity and exploration in AI art generation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Image Generation -->
+                <div class="faq-category">
+                    <h2 class="category-title">AI Image Generation</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>What AI models are supported?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our prompts are designed to work with various AI image generation models including:</p>
+                            <ul>
+                                <li><strong>Stable Diffusion</strong> (various versions including SDXL)</li>
+                                <li><strong>Midjourney</strong> (V5, V6, and newer versions)</li>
+                                <li><strong>DALL-E</strong> (DALL-E 2 and DALL-E 3)</li>
+                                <li><strong>Leonardo AI</strong></li>
+                                <li><strong>Other models</strong> that accept text prompts</li>
+                            </ul>
+                            <p>Each prompt on our site indicates which model was used to generate the example image.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>What is a negative prompt?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A negative prompt tells the AI what you <strong>don't</strong> want in your image. It's used to exclude certain elements, styles, or qualities. For example, if you want a realistic image, you might use "cartoon, anime, illustration" as negative prompts. Many of our prompt examples include both positive and negative prompts for better results.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Why do my results look different from the examples?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Several factors can affect your results:</p>
+                            <ul>
+                                <li><strong>Different AI models</strong> interpret prompts differently</li>
+                                <li><strong>Model versions</strong> and updates can change outputs</li>
+                                <li><strong>Settings and parameters</strong> like CFG scale, sampling steps, and seed values</li>
+                                <li><strong>Model-specific features</strong> and training data</li>
+                                <li><strong>Randomness</strong> inherent in AI generation</li>
+                            </ul>
+                            <p>Don't be discouraged if your first attempt doesn't match exactly - experiment with the prompt and settings to achieve your desired result!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>How can I improve my prompt results?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Here are some tips for better AI image generation:</p>
+                            <ul>
+                                <li><strong>Be specific:</strong> Include details about style, lighting, colors, and composition</li>
+                                <li><strong>Use descriptive adjectives:</strong> "dramatic lighting," "vibrant colors," "soft focus"</li>
+                                <li><strong>Specify the medium:</strong> "oil painting," "digital art," "photograph," "watercolor"</li>
+                                <li><strong>Include technical details:</strong> "8K resolution," "ultra-detailed," "professional photography"</li>
+                                <li><strong>Reference artists or styles:</strong> "in the style of Van Gogh," "cyberpunk aesthetic"</li>
+                                <li><strong>Use negative prompts</strong> to exclude unwanted elements</li>
+                            </ul>
+                            <p>Study our example prompts to learn effective techniques and phrasing!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Features -->
+                <div class="faq-category">
+                    <h2 class="category-title">Website Features</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>How does the search function work?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our search function looks through multiple aspects of each prompt:</p>
+                            <ul>
+                                <li>Prompt titles and descriptions</li>
+                                <li>The actual prompt text content</li>
+                                <li>Tags and categories</li>
+                                <li>AI model information</li>
+                            </ul>
+                            <p>You can search for specific styles, subjects, colors, or even specific words that might appear in the prompts. The search is case-insensitive and supports partial matches.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>How do the filters work?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our filtering system allows you to narrow down prompts by:</p>
+                            <ul>
+                                <li><strong>AI Model:</strong> Filter by Stable Diffusion, Midjourney, DALL-E, etc.</li>
+                                <li><strong>Categories:</strong> Landscape, portrait, abstract, architecture, etc.</li>
+                                <li><strong>Tags:</strong> Specific subjects, styles, or themes</li>
+                            </ul>
+                            <p>You can combine multiple filters to find exactly what you're looking for. Filters work together with the search function for even more precise results.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Can I submit my own prompts?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Currently, we curate all prompts on the platform to ensure quality and consistency. However, we're working on a submission system that will allow users to share their best prompts with the community. Stay tuned for updates!</p>
+                            <p>In the meantime, if you have exceptional prompts you'd like to share, you can contact us through our social media channels or email.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>How often is the website updated?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We regularly add new prompts to keep our collection fresh and inspiring. New prompts are typically added:</p>
+                            <ul>
+                                <li><strong>Daily:</strong> New featured prompts and trending content</li>
+                                <li><strong>Weekly:</strong> Themed collections and seasonal content</li>
+                                <li><strong>Monthly:</strong> Major updates and new categories</li>
+                            </ul>
+                            <p>Follow us on social media to stay updated on new additions and platform improvements!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Issues -->
+                <div class="faq-category">
+                    <h2 class="category-title">Technical Issues</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>The website isn't loading properly. What should I do?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you're experiencing loading issues, try these solutions:</p>
+                            <ul>
+                                <li><strong>Refresh the page</strong> (Ctrl+F5 or Cmd+Shift+R)</li>
+                                <li><strong>Clear your browser cache</strong> and cookies</li>
+                                <li><strong>Try a different browser</strong> or incognito/private mode</li>
+                                <li><strong>Check your internet connection</strong></li>
+                                <li><strong>Disable browser extensions</strong> that might interfere</li>
+                            </ul>
+                            <p>If problems persist, please contact us with details about your browser, device, and the specific issue you're experiencing.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Images aren't displaying. What's wrong?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Image display issues can be caused by several factors:</p>
+                            <ul>
+                                <li><strong>Slow internet connection</strong> - images may take time to load</li>
+                                <li><strong>Browser compatibility</strong> - ensure you're using a modern browser</li>
+                                <li><strong>Ad blockers</strong> - some ad blockers may interfere with image loading</li>
+                                <li><strong>Firewall or network restrictions</strong> - check if your network blocks certain content</li>
+                            </ul>
+                            <p>Our images are served from reliable sources, so loading issues are usually temporary or related to your local setup.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Can I use this website on mobile devices?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! InspirationPrompt.com is fully responsive and optimized for mobile devices. The website automatically adapts to your screen size, providing an excellent experience on:</p>
+                            <ul>
+                                <li>Smartphones (iOS and Android)</li>
+                                <li>Tablets (iPad, Android tablets)</li>
+                                <li>Desktop computers</li>
+                                <li>Various screen sizes and orientations</li>
+                            </ul>
+                            <p>All features including search, filters, and prompt copying work seamlessly on mobile devices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal and Usage -->
+                <div class="faq-category">
+                    <h2 class="category-title">Legal and Usage</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Can I use these prompts for commercial projects?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The prompts themselves are text descriptions and are generally free to use. However, the images you generate using these prompts may be subject to the terms of service of the AI tool you're using (Stable Diffusion, Midjourney, etc.).</p>
+                            <p>Always check the specific terms of service for:</p>
+                            <ul>
+                                <li>The AI platform you're using</li>
+                                <li>Commercial usage rights</li>
+                                <li>Attribution requirements</li>
+                                <li>Any usage restrictions</li>
+                            </ul>
+                            <p>We recommend reviewing the terms of your chosen AI tool before using generated images commercially.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Do I need to credit InspirationPrompt.com?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While not required, we appreciate attribution when you use prompts from our platform! Crediting us helps:</p>
+                            <ul>
+                                <li>Support our platform and community</li>
+                                <li>Help other artists discover our resources</li>
+                                <li>Build a stronger AI art community</li>
+                            </ul>
+                            <p>A simple mention like "Prompt inspired by InspirationPrompt.com" is greatly appreciated but entirely optional.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3>Are there any usage restrictions?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our prompts are provided for creative and artistic purposes. We ask that you:</p>
+                            <ul>
+                                <li><strong>Use responsibly</strong> - avoid creating harmful, illegal, or offensive content</li>
+                                <li><strong>Respect copyright</strong> - don't use prompts to recreate copyrighted characters or brands for commercial use</li>
+                                <li><strong>Follow platform rules</strong> - adhere to the terms of service of your AI tool</li>
+                                <li><strong>Be creative</strong> - use prompts as inspiration, not just copying exactly</li>
+                            </ul>
+                            <p>We reserve the right to remove any content that violates these guidelines or applicable laws.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="faq-contact">
+                <div class="contact-card glass">
+                    <h2 class="contact-title">Still Have Questions?</h2>
+                    <p class="contact-description">
+                        Can't find the answer you're looking for? We're here to help! Reach out to us through our social media channels or contact us directly.
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="mailto:contact@inspirationprompt.com" class="btn btn-primary">Contact Support</a>
+                        <a href="https://discord.gg/rNgAFP3b" class="btn btn-secondary">Join Community</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-emblem"></div>
+                        <span class="logo-text">inspiration prompt</span>
+                    </div>
+                    <p class="footer-description">Discover and share amazing AI image generation prompts. Get inspired by high-quality AI-generated images from around the world.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="index.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Community & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contact@inspirationprompt.com">Contact Support</a></li>
+                        <li><a href="https://discord.gg/rNgAFP3b" target="_blank" rel="noopener noreferrer">Join Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="../terms/index.html">Terms of Service</a></li>
+                        <li><a href="../privacy/index.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 InspirationPrompt.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/faq.js"></script>
+</body>
+</html>

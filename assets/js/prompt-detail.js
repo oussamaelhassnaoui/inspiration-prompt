@@ -75,26 +75,36 @@ function updatePageContent() {
 
 // Copy prompt functionality
 function copyPrompt() {
-    const promptText = document.querySelector('.prompt-card-description').textContent;
-    
-    // Create temporary textarea to copy text
-    const textarea = document.createElement('textarea');
-    textarea.value = promptText;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    
-    // Show feedback
+    const promptTextElement = document.getElementById('prompt-text');
+    if (!promptTextElement) {
+        console.error('Prompt text element not found.');
+        return;
+    }
+    const promptText = promptTextElement.textContent;
     const copyBtn = document.querySelector('.copy-prompt-btn');
-    const originalText = copyBtn.innerHTML;
-    copyBtn.innerHTML = '<span class="copy-icon">✓</span> Copied!';
-    copyBtn.style.background = '#10b981';
-    
-    setTimeout(() => {
-        copyBtn.innerHTML = originalText;
-        copyBtn.style.background = '#000000';
-    }, 2000);
+    const originalContent = copyBtn.innerHTML;
+
+    navigator.clipboard.writeText(promptText)
+        .then(() => {
+            // Show feedback
+            copyBtn.innerHTML = '<span class="copy-icon">✓</span> Copied!';
+            copyBtn.style.backgroundColor = '#28a745'; // A shade of green
+
+            setTimeout(() => {
+                copyBtn.innerHTML = originalContent;
+                copyBtn.style.backgroundColor = ''; // Reset to original
+            }, 2000);
+        })
+        .catch(err => {
+            console.error('Failed to copy prompt: ', err);
+            // Optionally, provide visual feedback for error
+            copyBtn.innerHTML = '<span class="copy-icon">✖</span> Failed!';
+            copyBtn.style.backgroundColor = '#dc3545'; // A shade of red
+            setTimeout(() => {
+                copyBtn.innerHTML = originalContent;
+                copyBtn.style.backgroundColor = ''; // Reset to original
+            }, 2000);
+        });
 }
 
 // Try prompt functionality

@@ -1114,7 +1114,7 @@ body {
 }
 
 .copy-prompt-btn:hover {
-    background: #333333;
+    background-color: #333333;
     transform: translateY(-2px);
 }
 
